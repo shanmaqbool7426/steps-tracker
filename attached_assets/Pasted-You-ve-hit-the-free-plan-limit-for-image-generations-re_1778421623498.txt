@@ -1,0 +1,134 @@
+You've hit the free plan limit for image generations requests. You can create more images when the limit resets in 22 hours and 28 minutes.
+
+```txt
+Create a premium futuristic Step Tracker & Pedometer mobile app UI in React Native with Expo and TypeScript.
+
+Design a luxury health and walking tracker app inspired by Apple Health, Fitbit, Samsung Health, and modern Dribbble concepts.
+
+STYLE:
+- Ultra modern UI
+- White + blue gradient theme
+- Glassmorphism cards
+- Floating widgets
+- Soft shadows
+- Smooth gradients
+- Rounded corners
+- Clean typography
+- Premium animations
+- iPhone 16 Pro mockup presentation
+- Luxury startup aesthetic
+- Minimal but powerful interface
+
+MAIN SCREENS:
+
+1. HOME DASHBOARD
+- Large animated step counter
+- Circular progress ring
+- Calories burned
+- Distance walked
+- Active time
+- Weekly progress chart
+- Daily goal tracker
+- Motivational text
+- Floating health cards
+- Weather widget
+
+2. ACTIVITY ANALYTICS
+- Daily / Weekly / Monthly tabs
+- Interactive line graph
+- Step history
+- Calories analytics
+- Walking trends
+- Progress insights
+
+3. GOALS SCREEN
+- Daily goals
+- Achievement badges
+- XP system
+- Walking streaks
+- Rewards system
+- Animated completion effects
+
+4. WALKING SESSION SCREEN
+- Real-time step tracking
+- Live map
+- Pace tracker
+- Timer
+- Distance counter
+- Dynamic glowing UI
+
+5. PROFILE SCREEN
+- User avatar
+- Height / Weight
+- BMI
+- Goal settings
+- Theme customization
+- Premium subscription card
+
+6. PREMIUM SCREEN
+- VIP membership UI
+- Gold premium cards
+- AI health insights
+- Advanced reports
+- Cloud sync
+- Elegant pricing section
+
+TECH STACK:
+- React Native Expo
+- TypeScript
+- React Navigation
+- React Native Reanimated
+- React Native SVG
+- NativeWind
+- Zustand
+- Expo Sensors (Pedometer)
+- React Native Chart Kit
+
+UI COMPONENTS:
+- Animated progress circles
+- Gradient cards
+- Floating buttons
+- Interactive charts
+- Smooth tab navigation
+- Glassmorphism widgets
+- Dynamic health indicators
+
+MOCK DATA:
+- Fake user profiles
+- Step counts
+- Calories
+- Distance
+- Weekly reports
+- Health stats
+- Walking history
+- Achievement data
+
+FOLDER STRUCTURE:
+src/
+ ├── screens/
+ ├── components/
+ ├── navigation/
+ ├── hooks/
+ ├── services/
+ ├── store/
+ ├── assets/
+ ├── theme/
+ └── utils/
+
+REQUIREMENTS:
+- Pixel perfect design
+- Production ready architecture
+- Responsive layouts
+- Smooth 60fps animations
+- Clean reusable components
+- Billion-dollar startup quality UI
+- Dribbble and Behance level presentation
+
+Generate:
+- Full app UI kit
+- Multiple mobile screens
+- Beautiful onboarding
+- App Store promotional mockups
+- Realistic mobile presentation
+- Modern health app branding
+```

@@ -1,36 +1,42 @@
-# [Project name]
+# StepX - Step Tracker
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A premium futuristic step tracker & pedometer mobile app with glassmorphism cards, animated progress rings, and a full health dashboard.
 
 ## Run & Operate
 
+- `pnpm --filter @workspace/step-tracker run dev` — run the Expo dev server
 - `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
 
 ## Stack
 
 - pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+- Mobile: Expo + React Native, Expo Router
+- Animations: react-native-reanimated
+- Charts: react-native-svg (custom animated bar chart + circular progress)
+- Gradients: expo-linear-gradient
+- State: React Context + AsyncStorage
+- Fonts: @expo-google-fonts/inter (400/500/600/700)
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
-
-## Architecture decisions
-
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- `artifacts/step-tracker/` — Expo mobile app
+- `artifacts/step-tracker/context/StepContext.tsx` — global step state, session, achievements
+- `artifacts/step-tracker/components/` — CircularProgress, BarChart, GlassCard, StatCard
+- `artifacts/step-tracker/app/(tabs)/` — 5 tab screens: index, analytics, goals, session, profile
+- `artifacts/step-tracker/constants/colors.ts` — design tokens (blue/white theme)
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+StepX is a premium health tracking app with:
+- Animated circular step ring with gradient SVG
+- 5 screens: Home Dashboard, Analytics, Goals & Achievements, Walking Session, Profile
+- XP/level system with achievement badges
+- Real-time walking session with live metrics (steps, pace, distance, calories)
+- BMI calculator and body stats
+- Premium subscription card
+- Weekly/monthly analytics with bar charts
 
 ## User preferences
 
@@ -38,7 +44,11 @@ _Populate as you build — explicit user instructions worth remembering across s
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- react-native-svg v^15 — use AnimatedCircle via `Animated.createAnimatedComponent(Circle)`
+- expo-sensors (Pedometer) has no web support — use mock/simulated step data on web
+- react-native-maps pinned to exactly 1.18.0 if used; skipped in this build (simulated route instead)
+- fontFamily like "Inter_700Bold" works on native; web falls back to system font gracefully
+- Session screen uses dark navy gradient background (different from other screens)
 
 ## Pointers
 
