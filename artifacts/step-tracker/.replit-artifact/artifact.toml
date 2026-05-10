@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/"
+title = "StepX - Step Tracker"
+version = "1.0.0"
+id = "artifacts/step-tracker"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/" ]
+localPort = 18543
+
+[services.development]
+run = "pnpm --filter @workspace/step-tracker run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/step-tracker", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/step-tracker", "run", "serve" ]
+
+[services.env]
+PORT = "18543"
+BASE_PATH = "/"
